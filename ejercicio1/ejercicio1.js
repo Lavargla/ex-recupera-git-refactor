@@ -1,47 +1,40 @@
+let a, b, total;
 function Suma(){
-
-    let a, b, total1;
     
     a = parseInt(document.getElementById("n1").value);
     b = parseInt(document.getElementById("n2").value);
 
-    total1 = a + b;
+    total = a + b;
 
-    window.alert(total1);
+    window.alert(total);
 }
 
 function Resta(){
     
-    let a, b, total2;
-    
     a = parseInt(document.getElementById("n1").value);
     b = parseInt(document.getElementById("n2").value);
 
-    total2 = a - b;
+    total = a - b;
 
-    window.alert(total2);
+    window.alert(total);
 }
 
 function Multiplicacion(){
-
-    let a, b, total3;
     
     a = parseInt(document.getElementById("n1").value);
     b = parseInt(document.getElementById("n2").value);
     
-    total3 = a * b;
+    total = a * b;
 
-    window.alert(total3);
+    window.alert(total);
 }
 
 function Division(){
-
-    let a, b, total4;
     
     a = parseInt(document.getElementById("n1").value);
     b = parseInt(document.getElementById("n2").value);
 
-    total4 = a / b;
+    total = a / b;
 
-    window.alert(total4);
+    window.alert(total);
 }
