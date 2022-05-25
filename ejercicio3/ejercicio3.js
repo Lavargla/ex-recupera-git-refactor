@@ -1,30 +1,22 @@
-function Crear (nombre) {
-    this.nombre = nombre;
+function Create (name) {
+    this.name = name;
     this.array = [];
     
-    this.add = function (nombre, cantidad) {
-    this.array[nombre] = cantidad;
-    }
+    this.add = function (name, quantity) { this.array[name] = quantity; }
     
-    this.borrar = function (nombre) {
-    delete this.array[nombre];
-    }
+    this.delete = function (name) { delete this.array[name]; }
     
-    this.cantidad = function (nombre) {
-    return this.array[nombre];
-    }
+    this.getQuantity = function (name) { return this.array[name]; }
     
-    this.getNombre = function () {
-    return this.nombre;
-    }
+    this.getName = function () { return this.name; }
 }
 
-var libros = new Crear("Libros");
+var libros = new Create("Libros");
 libros.add("AngularJS", 3);
 libros.add("JavaScript", 10);
-libros.cantidad("JavaScript"); // 10
-libros.borrar("JavaScript");
+libros.getQuantity("JavaScript"); // 10
+libros.delete("JavaScript");
 
-var juegos = new Crear("juegos");
+var juegos = new Create("juegos");
 juegos.add("Fifa", 5);
-juegos.cantidad("Fifa"); //5
+juegos.getQuantity("Fifa"); //5
