@@ -1,8 +1,13 @@
 let n1, n2, total;
-function Suma(){
-    
+
+function Value_update(){
     n1 = parseInt(document.getElementById("n1").value);
     n2 = parseInt(document.getElementById("n2").value);
+}
+
+function Suma(){
+    
+    Value_update();
 
     total = n1 + n2;
 
@@ -11,8 +16,7 @@ function Suma(){
 
 function Resta(){
     
-    n1 = parseInt(document.getElementById("n1").value);
-    n2 = parseInt(document.getElementById("n2").value);
+    Value_update();
 
     total = n1 - n2;
 
@@ -21,8 +25,7 @@ function Resta(){
 
 function Multiplicacion(){
     
-    n1 = parseInt(document.getElementById("n1").value);
-    n2 = parseInt(document.getElementById("n2").value);
+    Value_update();
     
     total = n1 * n2;
 
@@ -31,8 +34,7 @@ function Multiplicacion(){
 
 function Division(){
     
-    n1 = parseInt(document.getElementById("n1").value);
-    n2 = parseInt(document.getElementById("n2").value);
+    Value_update();
 
     total = n1 / n2;
 
