@@ -9,6 +9,10 @@ function Create (name) {
     this.getQuantity = function (name) { return this.array[name]; }
     
     this.getName = function () { return this.name; }
+
+    this.addDescription = function (description) { this.description = description }
+
+    this.getDescription = function() { return this.description }
 }
 
 var libros = new Create("Libros");
