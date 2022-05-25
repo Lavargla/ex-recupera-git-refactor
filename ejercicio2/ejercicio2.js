@@ -2,6 +2,16 @@ function activate(){
 
     var cadena = document.getElementById("frase").value;
     var array=cadena.split(" ");
+
+    for(i = 0; i < array.length; i++){
+
+        if(array[i] == "  " || array[i] == " " || array[i] == ""){
+            array.splice(i, 1);
+            i--;
+        }
+
+    }
+
     word_handler(array);
     palindromo(cadena);
 
